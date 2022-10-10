@@ -1,1 +1,1 @@
-ls -l | wc -l | tr -d ' '
+ls | wc -l | tr -d ' '
