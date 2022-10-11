@@ -1,0 +1,29 @@
+body {
+	background-color: skyblue;
+}
+
+table {
+	border: 10px;
+	border-color: white;
+}
+
+td {
+	width: 100vw;
+	height: 98vh;
+}
+
+p {
+	padding: 1%;
+}
+
+.leftcell {
+	background-color: darkblue;
+}
+
+.rightcell {
+	background-color: darkslategrey;
+}
+
+.whiteText {
+	color: white;
+}
