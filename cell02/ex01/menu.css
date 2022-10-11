@@ -1,0 +1,50 @@
+body {
+	background-color: skyblue;
+	margin: 0 0 0 0;
+}
+
+nav {
+	background-color: deepskyblue;
+	width: 100vw;
+	height: 64px;
+}
+
+.DD {
+	display: inline-block;
+	position: relative;
+}
+
+.menuDD {
+	background-color: #009fff;
+	text-align: center;
+	width: 8vw;
+	height: 64px;
+	line-height: 64px;
+	font-size: 42px;
+	font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+
+.DDtable {
+	display: none;
+	position: absolute;
+	background-color: #009fff;
+	min-width: 300px;
+}
+
+.DDtable a {
+	display: block;
+	font-size: 24px;
+	padding: 5px 6px;
+}
+
+.DD:hover .menuDD {
+	background-color: #007fff;
+}
+
+.DDtable a:hover {
+	background-color: #007fff;
+}
+
+.DD:hover .DDtable {
+	display: block;
+}
