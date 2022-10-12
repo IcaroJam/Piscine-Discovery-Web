@@ -1,0 +1,69 @@
+body {
+	margin: 0;
+	height: 100%;
+	background-color: lightsteelblue;
+}
+
+div {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	line-height: 100%;
+	width: 420px;
+}
+
+#mainContainer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 640px;
+	margin: -320px -210px;
+	border-radius: 7px;
+	border: 2px solid lightslategrey;
+	background-color: lightslategrey;
+}
+
+#cardTitle {
+	margin: 0;
+	padding: 35px;
+	background-color: slategrey;
+	color: lightgrey;
+	font-family: Lobster;
+}
+
+#cardImg {
+	position: relative;
+	width: 100%;
+}
+
+#dumbText {
+	font-family: Arial, Helvetica, sans-serif;
+	color: lightgrey;
+	font-size: 12px;
+	padding: 15px;
+}
+
+.logo {
+	width: 27px;
+	height: 27px;
+	padding: 10px 4px;
+}
+
+#contactBtn {
+	position: absolute;
+	right:    0;
+	bottom:   0;
+	width: 100%;
+	padding: 15px 0;
+	background-color: lightslategrey;
+	border: none;
+	border-radius: 7px;
+	color: lightgrey;
+	font-family: Lobster;
+	font-size: 24px;
+}
+
+#contactBtn:hover {
+	background-color: slategrey;
+}
