@@ -16,10 +16,11 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				background-color: peachpuff;
 			}
 
 			#balloon {
-				background-color: red;
+				background-color: #d73232;
 				width: 200px;
 				height: 200px;
 				border-radius: 50%;
@@ -44,15 +45,15 @@
 			function colourShift(bloon) {
 				switch (colourCode) {
 					case "0":
-						bloon.style.background = "green";
+						bloon.style.background = "#42c742";
 						colourCode = "1";
 						break;
 					case "1":
-						bloon.style.background = "blue";
+						bloon.style.background = "#3232d7";
 						colourCode = "2";
 						break;
 					case "2":
-						bloon.style.background = "red";
+						bloon.style.background = "#d73232";
 						colourCode = "0";
 						break;
 				}
