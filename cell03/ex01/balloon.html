@@ -31,7 +31,7 @@
 				const bloon = document.getElementById("balloon");
 				let currSize = bloon.clientWidth;
 
-				colourShift(bloon);
+				colourShift(bloon, 1);
 				if (currSize <= 420) {
 					bloon.style.width = (currSize + 10) + "px";
 					bloon.style.height = (currSize + 10) + "px";
@@ -41,27 +41,33 @@
 				}
 			}
 
-			let colourCode = "0";
-			function colourShift(bloon) {
-				switch (colourCode) {
-					case "0":
-						bloon.style.background = "#42c742";
-						colourCode = "1";
-						break;
-					case "1":
-						bloon.style.background = "#3232d7";
-						colourCode = "2";
-						break;
-					case "2":
-						bloon.style.background = "#d73232";
-						colourCode = "0";
-						break;
+			let colourCode = 0;
+			function colourShift(bloon, trigger) {
+				let colourArr = ["#42c742", "#3232d7", "#d73232"];
+
+				colourCode += trigger;
+				if (colourCode < 0) {
+					colourCode = 2;
+				} else if (colourCode > 2) {
+					colourCode = 0;
+				}
+				bloon.style.background = colourArr[colourCode];
+			}
+
+			function bloonLeave() {
+				const bloon = document.getElementById("balloon");
+				let currSize = bloon.clientWidth;
+
+				if (bloon.clientWidth >= 205) {
+					colourShift(bloon, -1);
+					bloon.style.width = (currSize - 5) + "px";
+					bloon.style.height = (currSize - 5) + "px";
 				}
 			}
 		</script>
 	</head>
 	<body>
-		<div id="balloon" onclick="bloonClick()">
+		<div id="balloon" onclick="bloonClick()" onmouseleave="bloonLeave()">
 		</div>
 	</body>
 </html>
