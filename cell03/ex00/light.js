@@ -6,3 +6,7 @@ function getColour() {
 	document.body.style.background = `rgb(${r}, ${g}, ${b})`;
 	console.log("Color displayed: ", r, g, b);
 }
+
+function colorBack() {
+	document.body.style.background = "black";
+}

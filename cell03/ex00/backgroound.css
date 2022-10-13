@@ -12,6 +12,8 @@ body {
 	align-items: center;
 	justify-content: center;
 	background-color: black;
+	-webkit-transition: background-color 250ms ease-in-out;
+	transition: background-color 250ms ease-in-out;
 }
 
 button {
